@@ -10,7 +10,9 @@ function summarizeuser(username,userage,userhashobbies) //a simple JS function i
 const summerize=(username,userage,userhashobbies) =>{
     return ('UserName is-' + username+' Userage is- '+userage+' Userhashobbies-'+userhashobbies);  //a arrow function
 };
-const add = (a,b) => (a+b);
-console.log(summarizeuser(name,age,hashobbies));   //a simplified version of arrow function
+const add = (a,b) => (a+b);  //a simplified version of arrow function with two arguments 
+const multiply= b => b*4;    //a arrow function with one argument
+console.log(summarizeuser(name,age,hashobbies));  
 console.log(summerize(name,age,hashobbies));
 console.log(add(2,age));
+console.log(multiply(age));
