@@ -1,3 +1,4 @@
+//core js syntax
 var name="khushal agarwal";
 var age=18;
 var hashobbies=true;
