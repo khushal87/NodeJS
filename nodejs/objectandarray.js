@@ -1,3 +1,4 @@
+//OBJECTS
 var name="Max";
 var age=18;
 const person={
@@ -20,10 +21,10 @@ console.log(person.agedefined(age));
 
 
 
-
+//ARRAYS 
 const hobbies=['sports','music','singing'];
 for(let hobby of hobbies)
-{
+{                                                                       //accessing araay elements
     console.log(hobby);
 }
 console.log(hobbies.map(hobby => 'Hobby:'+hobby));
