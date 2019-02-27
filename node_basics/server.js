@@ -9,13 +9,7 @@ const http = require('http');
 
 const server=http.createServer(function(req,res)
 {
-    console.log(req);
-    res.setHeader('Content-Type','text/html');   //used to set header(sort of a metadata)
-    res.write("<html>");
-    res.write("<head><title>My first page</title></head>");      //html code
-    res.write("<body><h1>Hello from my node js server.</h1></body>");
-    res.write("</html>") ;  
-    res.end();                                           //using standard functions
+    console.log(req);                              //using standard functions
 });
 
 server.listen(3000);
