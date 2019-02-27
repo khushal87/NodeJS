@@ -24,7 +24,7 @@ const server=http.createServer(function(req,res)
     {
         fs.writeFileSync('message.txt','Dummy');
         res.statusCode=302;
-        res.setHeader('Location','/');
+        res.setHeader('Location','/');                                          //getting the user input in a different file of .txt extension
         return res.end();
     }
     res.setHeader('Content-Type','text/html');   //used to set header(sort of a metadata)
