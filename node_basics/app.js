@@ -2,6 +2,7 @@
 //then to create the server we use the method createSever.
 //it generally takes two arguments one is the request listener with request and response and the
 const http = require('http'); 
+const fs= reuqire('fs');
 // function reqlisten(req,res)
 // {                                                //a way to define a request listener
 
@@ -18,6 +19,13 @@ const server=http.createServer(function(req,res)
     res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
     res.write("</html>") ;  
     return res.end();                                                      //we have done it because without it the lines after the if statement is executed and which will create a error.
+    }
+    if(url==='/message'&&method==='POST')
+    {
+        fs.writeFileSync('message.txt','Dummy');
+        res.statusCode=302;
+        res.setHeader('Location','/');
+        return res.end();
     }
     res.setHeader('Content-Type','text/html');   //used to set header(sort of a metadata)
     res.write("<html>");
