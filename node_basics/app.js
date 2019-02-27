@@ -16,5 +16,5 @@ server.listen(3000);
 
 // http.createServer((req,res) =>
 // {
-//     console.log(req);                                creating the srever request using aarrow functions using arrow function 
+//     console.log(req);                                //creating the srever request using arrow functions
 // });
