@@ -1,5 +1,5 @@
 
-const http = require('http');           //after importing expressjs we can remove our http also as we dont need it
+//const http = require('http');           //after importing expressjs we can remove our http also as we dont need it
 const express=require('express');           //to import express js
 
 const app=express();                    //execute express as a function
