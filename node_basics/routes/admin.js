@@ -13,4 +13,9 @@ router.post('/product',(req,res,next)=> {                                  //the
     console.log(req.body);
     res.redirect('/');                                                   //used for redirecting 
 });
-module.exports=router; 
+
+
+//module.exports=router; 
+
+exports.routes=router;
+exports.products=products;                  //since we changed the way it is exported the app.js should also be modified
